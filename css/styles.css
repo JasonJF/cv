@@ -1,0 +1,139 @@
+:root {
+
+    /* Colours */
+    --primary-color: #FDFDFA;
+    --secondary-color: #b983ff;
+    --accent-light-blue: #94daff;
+    --accent-dark-blue: #94b3fd;
+    --accent-turquoise: #99feff;
+    --accent-orange: #ffbd68;
+
+    /* Sizes */
+    --ellipse1-size: 25vh;
+    --ellipse2-size: 30vh;
+    --ellipse3-size: 40vh;
+  }
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.main-wrapper {
+    margin: 0;
+    text-align: center;
+    /* background-color: #94daff; */
+}
+
+/* Ellipses */
+
+.ellipse1 {
+    /* Ellipse 1 */
+    position: absolute;
+    width: var(--ellipse1-size);
+    height: var(--ellipse1-size);
+    left: 53vw;
+    top: 20vh;
+    border-radius: 100%;    
+    background: radial-gradient(53.74% 53.74% at 80.99% 38.5%, rgba(148, 179, 253, 0.16) 0%, #94B3FD 100%);
+}
+
+
+.ellipse2 {
+    /* Ellipse 2 */
+    position: absolute;
+    width: var(--ellipse2-size);
+    height: var(--ellipse2-size);
+    left: 15vw;
+    top: 60vh;
+    border-radius: 100%;
+    background: radial-gradient(53.89% 53.89% at 81.14% 33.39%, rgba(148, 218, 255, 0.2) 0%, #99FEFF 100%);
+}
+
+.ellipse3 {
+    /* Ellipse 3 */
+
+
+    position: absolute;
+    width: var(--ellipse3-size);
+    height: var(--ellipse3-size);
+    left: 72vw;
+    top: 30vh;
+    border-radius: 100%;
+    background: radial-gradient(44.01% 44.01% at 71.25% 27.66%, rgba(148, 179, 253, 0.16) 0%, #B983FF 100%);
+}
+
+/* Navigation Section */
+
+.navBar {
+    display: inline-block;
+    margin-left: 0;
+    height: 10%;
+    width: 100%;
+    /* background-color: blue; */
+    align-items: center;
+    box-shadow: 0px 3px 12px -1px rgba(161, 145, 145, 0.75);
+    -webkit-box-shadow: 0px 3px 12px -1px rgba(161, 145, 145, 0.75);
+    -moz-box-shadow: 0px 3px 12px -1px rgba(161, 145, 145, 0.75);
+}
+
+.navLogo {
+    font-size: 3rem;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 7px;
+}
+
+.links {
+    padding: 5px 10%;
+    color: black;
+    text-decoration: none;
+
+}
+
+/* About Section*/
+
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+    /* background-color: #94daff; */
+    margin: 5% 0;
+    
+}
+
+.about-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 70vw;
+    height: 65vh;
+    border-radius: 25px;
+    background-color: red;
+    padding: 1% 5%;
+    justify-content: space-evenly;
+    background: linear-gradient(231.55deg, rgba(255, 255, 255, 0.83) 22.77%, rgba(255, 255, 255, 0.53) 76.52%);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 25px;
+}
+
+.greeting-wrapper {
+    text-align: left;
+}
+.profile-img {
+    height: 40vh;
+}
