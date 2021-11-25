@@ -228,11 +228,13 @@ p {
 /* Knowledge & Skills Section */
 .skills-cards-wrapper {
     min-width: 60%;
+    display: flex;
+    grid-area: inner-div;
+    margin-top: 15%;
 }
 .skills {
-    display: flex;
-    flex-direction: row;
     width: 75vw;
+    height: auto;
     padding: 5% 7%;
 }
 
@@ -240,10 +242,11 @@ p {
     align-items: flex-start;
     height: 100%;
     width: 30%;
+    grid-area: inner-div;
 }
 
 .skills-card {
-    position: absolute;
+    position: static;
     
     width: 25%;
     margin: auto;
