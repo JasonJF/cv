@@ -33,6 +33,12 @@ h2 {
 p {
     text-align: left;
 }
+.backgroundContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    /* position: -webkit-sticky; */
+}
 
 
 .main-wrapper {
