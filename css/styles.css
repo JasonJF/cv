@@ -12,7 +12,7 @@
     --ellipse1-size: 25vh;
     --ellipse2-size: 30vh;
     --ellipse3-size: 40vh;
-  }
+}
 
 body {
     background-color: var(--primary-color);
@@ -40,7 +40,7 @@ h1 {
     height: var(--ellipse1-size);
     left: 53vw;
     top: 20vh;
-    border-radius: 100%;    
+    border-radius: 100%;
     background: radial-gradient(53.74% 53.74% at 80.99% 38.5%, rgba(148, 179, 253, 0.16) 0%, #94B3FD 100%);
 }
 
@@ -108,7 +108,7 @@ h1 {
     justify-content: center;
     /* background-color: #94daff; */
     margin: 5% 0;
-    
+
 }
 
 .about-card {
@@ -134,6 +134,24 @@ h1 {
 .greeting-wrapper {
     text-align: left;
 }
+.main-image-wrapper {
+    display: grid;
+    place-items: center;
+    grid-template-areas: "inner-div";
+}
+
+.blob-3 {
+    grid-area: inner-div;
+    left: 0;
+    top: 0;
+    width: 12vh;
+    height: 12vh;
+
+    /* background: rgba(131, 234, 235, 0.48); */
+    /* transform: rotate(116.74deg); */
+}
+
 .profile-img {
+    grid-area: inner-div;
     height: 40vh;
 }
