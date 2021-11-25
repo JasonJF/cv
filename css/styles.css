@@ -21,18 +21,27 @@ body {
 
 h1 {
     font-family: 'Spartan', sans-serif;
-    font-size: 70px;
+    font-size: calc(2.5vw + 2.5vh + 2vmin);
     font-weight: 800;
 }
 
 h2 {
     font-family: 'Spartan', sans-serif;
-    font-size: 50px;
+    font-size: calc(1.5vw + 1.5vh + 2vmin);
     font-weight: 600;
 }
+h3 {
+    font-size: large;
+}
+
 p {
     text-align: left;
 }
+.heading-container {
+    height: 10vh;
+    width: 30vw;
+}
+
 .backgroundContainer {
     position: fixed;
     width: 100vw;
@@ -49,11 +58,11 @@ p {
 
 /* Buttons */
 .accentButton {
-    width: 20vw;
-    height: 3vw;
+    /* width: 20vw; */
+    /* height: 3vw; */
     color: white;
     font-weight: 600;
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 
 /* Ellipses */
@@ -139,15 +148,16 @@ p {
 .greeting-card {
     display: flex;
     flex-direction: row;
-    
+
     /* border-radius: 25px; */
-    
-    
+
+
 }
+
 .transparent-card {
     align-items: center;
     position: relative;
-    width: 70vw;
+    min-width: 70vw;
     height: 65vh;
     padding: 1% 5%;
     justify-content: space-evenly;
@@ -157,12 +167,13 @@ p {
     backdrop-filter: blur(20px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 25px;
-   
+
 }
 
 .greeting-text-wrapper {
     text-align: left;
 }
+
 .main-image-wrapper {
     display: grid;
     place-items: center;
@@ -179,6 +190,13 @@ p {
     /* background: rgba(131, 234, 235, 0.48); */
     /* transform: rotate(116.74deg); */
 }
+.blob-4 {
+    grid-area: inner-div;
+    left: 0;
+    top: 0;
+    width: 50vh;
+    height: 50vh;
+}
 
 .profile-img {
     grid-area: inner-div;
@@ -186,7 +204,9 @@ p {
 }
 
 /* About Section */
-
+.about-card {
+    width: 75vw;
+}
 .about-top {
     display: flex;
     justify-content: space-evenly;
@@ -200,6 +220,64 @@ p {
     margin: 0 2%;
     /* padding: 0 5%; */
 }
+
 .about-text {
     margin-bottom: 10%;
+}
+
+/* Knowledge & Skills Section */
+.skills-cards-wrapper {
+    min-width: 60%;
+}
+.skills {
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    padding: 5% 7%;
+}
+
+.skills-text-wrapper {
+    align-items: flex-start;
+    height: 100%;
+    width: 30%;
+}
+
+.skills-card {
+    position: absolute;
+    
+    width: 25%;
+    margin: auto;
+    background: linear-gradient(231.55deg, rgba(255, 255, 255, 0.87) 22.77%, rgba(255, 255, 255, 0.37) 82.09%);
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+    padding: 2% 2%;
+    border-radius: 40px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+    /* background-color: var(--secondary-color); */
+}
+.skills-list-container {
+    display: flex;
+    justify-content: center;
+}
+.skills-list {
+    text-align: left;
+    font-size: small;
+}
+.skills-img {
+    max-width: 50%;
+}
+.card-1 {
+    top: 2%;
+    left: 2%;
+}
+.card-2 {
+    top: 20%;
+    left: 26%;
+}
+.card-3 {
+    top: 40%;
+    left: 49%;
+}
+.skills-heading {
+    grid-area: inner-div;
 }
