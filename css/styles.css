@@ -25,10 +25,29 @@ h1 {
     font-weight: 800;
 }
 
+h2 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+p {
+    text-align: left;
+}
+
+
 .main-wrapper {
     margin: 0;
     text-align: center;
     /* background-color: #94daff; */
+}
+
+/* Buttons */
+.accentButton {
+    width: 20vw;
+    height: 3vw;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
 }
 
 /* Ellipses */
@@ -101,9 +120,9 @@ h1 {
 
 }
 
-/* About Section*/
+/* Greeting Section*/
 
-.about-wrapper {
+.default-wrapper {
     display: flex;
     justify-content: center;
     /* background-color: #94daff; */
@@ -111,15 +130,19 @@ h1 {
 
 }
 
-.about-card {
+.greeting-card {
     display: flex;
     flex-direction: row;
+    
+    /* border-radius: 25px; */
+    
+    
+}
+.transparent-card {
     align-items: center;
     position: relative;
     width: 70vw;
     height: 65vh;
-    border-radius: 25px;
-    background-color: red;
     padding: 1% 5%;
     justify-content: space-evenly;
     background: linear-gradient(231.55deg, rgba(255, 255, 255, 0.83) 22.77%, rgba(255, 255, 255, 0.53) 76.52%);
@@ -127,11 +150,11 @@ h1 {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
     backdrop-filter: blur(20px);
     /* Note: backdrop-filter has minimal browser support */
-
     border-radius: 25px;
+   
 }
 
-.greeting-wrapper {
+.greeting-text-wrapper {
     text-align: left;
 }
 .main-image-wrapper {
@@ -144,8 +167,8 @@ h1 {
     grid-area: inner-div;
     left: 0;
     top: 0;
-    width: 12vh;
-    height: 12vh;
+    width: 50vh;
+    height: 50vh;
 
     /* background: rgba(131, 234, 235, 0.48); */
     /* transform: rotate(116.74deg); */
@@ -154,4 +177,23 @@ h1 {
 .profile-img {
     grid-area: inner-div;
     height: 40vh;
+}
+
+/* About Section */
+
+.about-top {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    margin: 0 2%;
+    /* padding: 0 5%; */
+}
+.about-text {
+    margin-bottom: 10%;
 }
