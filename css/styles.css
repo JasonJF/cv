@@ -46,29 +46,26 @@ p {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    /* position: -webkit-sticky; */
+    z-index: -1;   /*This is important so that the background is behind everything, else links won't work*/   
 }
 
 
 .main-wrapper {
     margin: 0;
     text-align: center;
-    /* background-color: #94daff; */
+   
 }
 
 /* Buttons */
 .accentButton {
-    /* width: 20vw; */
-    /* height: 3vw; */
     color: white;
     font-weight: 600;
-    /* font-size: 2rem; */
 }
 
 /* Ellipses */
 
 .ellipse1 {
-    /* Ellipse 1 */
+   
     position: absolute;
     width: var(--ellipse1-size);
     height: var(--ellipse1-size);
@@ -80,7 +77,7 @@ p {
 
 
 .ellipse2 {
-    /* Ellipse 2 */
+    
     position: absolute;
     width: var(--ellipse2-size);
     height: var(--ellipse2-size);
@@ -91,9 +88,7 @@ p {
 }
 
 .ellipse3 {
-    /* Ellipse 3 */
-
-
+   
     position: absolute;
     width: var(--ellipse3-size);
     height: var(--ellipse3-size);
@@ -110,7 +105,6 @@ p {
     margin-left: 0;
     height: 10%;
     width: 100%;
-    /* background-color: blue; */
     align-items: center;
     box-shadow: 0px 3px 12px -1px rgba(161, 145, 145, 0.75);
     -webkit-box-shadow: 0px 3px 12px -1px rgba(161, 145, 145, 0.75);
@@ -140,7 +134,7 @@ p {
 .default-wrapper {
     display: flex;
     justify-content: center;
-    /* background-color: #94daff; */
+   
     margin: 5% 0;
 
 }
@@ -148,10 +142,6 @@ p {
 .greeting-card {
     display: flex;
     flex-direction: row;
-
-    /* border-radius: 25px; */
-
-
 }
 
 .transparent-card {
@@ -186,9 +176,6 @@ p {
     top: 0;
     width: 50vh;
     height: 50vh;
-
-    /* background: rgba(131, 234, 235, 0.48); */
-    /* transform: rotate(116.74deg); */
 }
 .blob-4 {
     grid-area: inner-div;
@@ -218,7 +205,7 @@ p {
     justify-content: center;
     max-width: 50%;
     margin: 0 2%;
-    /* padding: 0 5%; */
+  
 }
 
 .about-text {
@@ -291,6 +278,9 @@ p {
 .contact-card {
     display: flex;
     flex-direction: row;
+    width: 75vw;
+    height: auto;
+    padding: 5% 7%;
 }
 .contact-leftside {
     display: flex;
@@ -305,6 +295,3 @@ p {
     justify-content: space-evenly;
     font-size: 2rem;
 }
-/* .contact-form-wrapper {
-    
-} */
