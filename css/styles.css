@@ -295,3 +295,41 @@ p {
     justify-content: space-evenly;
     font-size: 2rem;
 }
+
+/* Media Queries */
+@media screen and (max-width:900px) {
+    /* About Section */
+    .about-top {
+        flex-direction: column;
+    }
+    .about-text-wrapper {
+        max-width: 100%;
+    }
+    .heading-container {
+        width: 100%;
+    }
+    .about-card {
+        height: auto;
+        padding: 5% 2%;
+    }
+
+    /* Skills Section */
+    .skills-cards-wrapper {
+        flex-direction: column;
+        width: 5rem;
+    }
+    .skills-text-wrapper {
+        align-items: flex-start;
+        width: auto;
+
+    }
+    .blob-4 {
+        width: 20vw;
+        height: 20vw;
+    }
+    .skills-card {
+        width: auto;
+        margin: 5% 2%;
+        padding: 5% 2%;
+    }
+}
