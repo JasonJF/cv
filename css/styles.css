@@ -200,7 +200,7 @@ p {
 
 .profile-img {
     grid-area: inner-div;
-    height: 40vh;
+    height: 50vh;
 }
 
 /* About Section */
@@ -228,6 +228,7 @@ p {
 /* Knowledge & Skills Section */
 .skills-cards-wrapper {
     min-width: 60%;
+    height: 70%;
     display: flex;
     grid-area: inner-div;
     margin-top: 15%;
@@ -247,7 +248,7 @@ p {
 
 .skills-card {
     position: static;
-    
+    height: 100%;
     width: 25%;
     margin: auto;
     background: linear-gradient(231.55deg, rgba(255, 255, 255, 0.87) 22.77%, rgba(255, 255, 255, 0.37) 82.09%);
@@ -284,3 +285,26 @@ p {
 .skills-heading {
     grid-area: inner-div;
 }
+
+/* Contact Section */
+
+.contact-card {
+    display: flex;
+    flex-direction: row;
+}
+.contact-leftside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    height: 100%;
+    width: 50%;
+}
+.contact-icons-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+/* .contact-form-wrapper {
+    
+} */
