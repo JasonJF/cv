@@ -215,22 +215,24 @@ p {
 /* Knowledge & Skills Section */
 .skills-cards-wrapper {
     min-width: 60%;
-    height: 70%;
+    height: auto;
     display: flex;
-    grid-area: inner-div;
+    /* grid-area: inner-div; */
     margin-top: 15%;
 }
 .skills {
+    display: flex;
+    flex-direction: column;
     width: 75vw;
-    height: auto;
+    height: 100%;
     padding: 5% 7%;
 }
 
 .skills-text-wrapper {
     align-items: flex-start;
-    height: 100%;
+    height: auto;
     width: 30%;
-    grid-area: inner-div;
+    /* grid-area: inner-div; */
 }
 
 .skills-card {
@@ -331,5 +333,12 @@ p {
         width: auto;
         margin: 5% 2%;
         padding: 5% 2%;
+    }
+    .blob-3 {
+        width: 30vh;
+    }
+    .profile-img {
+        width: 30vh;
+        height: 30vh;
     }
 }
