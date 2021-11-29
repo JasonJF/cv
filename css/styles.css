@@ -147,8 +147,9 @@ p {
 .transparent-card {
     align-items: center;
     position: relative;
-    min-width: 70vw;
-    height: 65vh;
+    width: 75vw;
+    min-height: 50vh;
+    height: auto;
     padding: 1% 5%;
     justify-content: space-evenly;
     background: linear-gradient(231.55deg, rgba(255, 255, 255, 0.83) 22.77%, rgba(255, 255, 255, 0.53) 76.52%);
@@ -192,7 +193,7 @@ p {
 
 /* About Section */
 .about-card {
-    width: 75vw;
+    /* width: 75vw; */
 }
 .about-top {
     display: flex;
@@ -223,7 +224,7 @@ p {
 .skills {
     display: flex;
     flex-direction: column;
-    width: 75vw;
+    /* width: 75vw; */
     height: 100%;
     padding: 5% 7%;
 }
@@ -280,7 +281,7 @@ p {
 .contact-card {
     display: flex;
     flex-direction: row;
-    width: 75vw;
+    /* width: 75vw; */
     height: auto;
     padding: 5% 7%;
 }
@@ -300,6 +301,14 @@ p {
 
 /* Media Queries */
 @media screen and (max-width:900px) {
+    .transparent-card {
+        min-width: 90vw;
+    }
+
+    /* Greeting Section */
+    .greeting-card {
+        flex-direction: column;
+    }
     /* About Section */
     .about-top {
         flex-direction: column;
@@ -340,5 +349,14 @@ p {
     .profile-img {
         width: 30vh;
         height: 30vh;
+    }
+
+    /* Contact Section */
+
+    .contact-card {
+        flex-direction: column;
+    }
+    .contact-leftside {
+        width: 100%;
     }
 }
