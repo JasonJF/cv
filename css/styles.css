@@ -150,7 +150,7 @@ p {
     width: 75vw;
     min-height: 50vh;
     height: auto;
-    padding: 10% 5%;
+    padding: 2% 5%;
     justify-content: space-evenly;
     background: linear-gradient(231.55deg, rgba(255, 255, 255, 0.83) 22.77%, rgba(255, 255, 255, 0.53) 76.52%);
     border: 1px solid rgba(0, 0, 0, 0.06);
@@ -313,6 +313,7 @@ p {
       }
     .transparent-card {
         min-width: 90vw;
+        padding: 10% 5%;
     }
 
     /* Greeting Section */
