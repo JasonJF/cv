@@ -150,7 +150,7 @@ p {
     width: 75vw;
     min-height: 50vh;
     height: auto;
-    padding: 1% 5%;
+    padding: 10% 5%;
     justify-content: space-evenly;
     background: linear-gradient(231.55deg, rgba(255, 255, 255, 0.83) 22.77%, rgba(255, 255, 255, 0.53) 76.52%);
     border: 1px solid rgba(0, 0, 0, 0.06);
@@ -158,17 +158,19 @@ p {
     backdrop-filter: blur(20px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 25px;
-
 }
 
 .greeting-text-wrapper {
     text-align: left;
+    padding: 5% 2%;
 }
 
 .main-image-wrapper {
     display: grid;
     place-items: center;
-    grid-template-areas: "inner-div";
+    margin: 8% 5%;
+    grid-template-areas:
+        "inner-div";
 }
 
 .blob-3 {
@@ -345,6 +347,7 @@ p {
     }
     .blob-3 {
         width: 30vh;
+        height: 30vh;
     }
     .profile-img {
         width: 30vh;
