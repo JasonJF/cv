@@ -303,6 +303,14 @@ p {
 
 /* Media Queries */
 @media screen and (max-width:900px) {
+    /* Main Containers */
+
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
     .transparent-card {
         min-width: 90vw;
     }
