@@ -193,10 +193,7 @@ p {
     height: 50vh;
 }
 
-/* About Section */
-.about-card {
-    /* width: 75vw; */
-}
+
 .about-top {
     display: flex;
     justify-content: space-evenly;
