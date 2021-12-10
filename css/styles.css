@@ -277,6 +277,8 @@ p {
 /* Blog Section */
 .blog-card {
     max-height: 70%;
+    width: 49%;
+    margin: auto;
 }
 
 

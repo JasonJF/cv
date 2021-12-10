@@ -11,7 +11,7 @@ var rssUrl = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.
             $("#logo").append(`<img src="${response.feed["image"]}" class="rounded mx-auto d-block">`)
             var display = '';
             $.each(response.items, function (k, item) {
-                display += `<div class="card carousel-item blog-card">`;
+                display += `<div class="card carousel-item">`;
                 var src = item["thumbnail"]; // use thumbnail url
                 display += `<img src="${src}" class="card-img-top" alt="Cover image">`;
                 display += `<div class="card-body">`;
