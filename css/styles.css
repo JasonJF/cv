@@ -274,6 +274,11 @@ p {
 .skills-heading {
     grid-area: inner-div;
 }
+/* Blog Section */
+.blog-card {
+    max-height: 70%;
+}
+
 
 /* Contact Section */
 
